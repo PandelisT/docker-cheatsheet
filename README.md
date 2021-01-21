@@ -1,10 +1,12 @@
 # Docker Commands Cheatsheet - WIP
 
+Install Docker on Ubuntu: https://docs.docker.com/engine/install/ubuntu/ (works for WSL2 as well)
+
 ``` systemctl start docker``` - start docker service in Ubuntu
 
 `docker pull <repository-name>`
 
-Pull images from docker hub to your local machine
+Pull images from docker hub to your local machine (https://hub.docker.com/)
 
 ```docker images```
 
