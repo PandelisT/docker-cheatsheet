@@ -16,23 +16,23 @@ See all images on your local computer
 
 ```docker start -a <container-name>```
 
-```docker create -it --name second-container ubuntu```
+```docker create -it --name <container-name> <image-name>```
 
 The -t flag is for allocating a pseudo terminal and the -i flag is to keep STDIN open even when we are not connected to this container. Without i even if we were typing into the terminal our container would not receive those commands.
 
-```docker start -ai second-container```
+```docker start -ai <container-name>```
 
-```docker start second-container``` - starts the container
+```docker start <container-name>``` - starts the container
 
-```docker attach second-container``` - opens the terminal
+```docker attach <container-name>``` - opens the terminal
 
-```docker stop second-container``` - stop container
+```docker stop <container-name>``` - stop container
 
-```docker create -it --name third-container ubuntu```
+```docker create -it --name <container-name> <image-name>```
 
-```docker start -ai third-container```
+```docker start -ai <container-name>```
 
-```docker commit third-container <your dockerhub user>/python-dev```
+```docker commit <container-name> <dockerhub-name>/<repository-name>```
 
 ```docker push <image repo name>```
 
